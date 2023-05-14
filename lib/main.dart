@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:smapp/home_screen.dart';
+import 'package:smapp/task_manager.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(ChangeNotifierProvider(
+      create: (_) => TaskManager(),
+    child: const MyApp(),
+  ));
 }
 
 class MyApp extends StatelessWidget {

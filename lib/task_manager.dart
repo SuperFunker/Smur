@@ -1,6 +1,7 @@
+import 'package:flutter/foundation.dart';
 import 'package:smapp/Task.dart';
 
-class TaskManager{
+class TaskManager extends ChangeNotifier{
   final List<Task> _tasks = [];
 
   void addTask(Task taskToAdd){

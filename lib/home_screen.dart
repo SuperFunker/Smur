@@ -37,22 +37,32 @@ class _HomeScreenState extends State<HomeScreen> {
               StaggeredGridTile.count(
                 crossAxisCellCount: 1,
                 mainAxisCellCount: 1,
-                child: MyOption(Icons.accessibility_new, "TEST", Colors.white),
+                child: MyOption(Icons.accessibility_new, "Coming Soon...", Colors.white54),
               ),
               StaggeredGridTile.count(
                 crossAxisCellCount: 1,
                 mainAxisCellCount: 1,
-                child: MyOption(Icons.accessibility_new, "TEST", Colors.white),
+                child: MyOption(Icons.accessibility_new, "Coming Soon...", Colors.white54),
               ),
               StaggeredGridTile.count(
                 crossAxisCellCount: 1,
                 mainAxisCellCount: 1,
-                child: MyOption(Icons.accessibility_new, "TEST", Colors.white),
+                child: MyOption(Icons.accessibility_new, "Coming Soon...", Colors.white54),
               ),
               StaggeredGridTile.count(
                 crossAxisCellCount: 1,
                 mainAxisCellCount: 1,
-                child: MyOption(Icons.accessibility_new, "TEST", Colors.white),
+                child: MyOption(Icons.accessibility_new, "Coming Soon...", Colors.white54),
+              ),
+              StaggeredGridTile.count(
+                crossAxisCellCount: 1,
+                mainAxisCellCount: 1,
+                child: MyOption(Icons.accessibility_new, "Coming Soon...", Colors.white54),
+              ),
+              StaggeredGridTile.count(
+                crossAxisCellCount: 1,
+                mainAxisCellCount: 1,
+                child: MyOption(Icons.accessibility_new, "Coming Soon...", Colors.white54),
               ),
             ],
           ),
@@ -130,6 +140,9 @@ class _HomeScreenState extends State<HomeScreen> {
                       Padding(padding: EdgeInsets.all(10.0),
                         child: Text(
                           title,
+                          style: TextStyle(
+                            fontStyle: FontStyle.italic
+                          ),
                           textAlign: TextAlign.center,
                         ),
                       ),
@@ -143,5 +156,5 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
     );
   }
-  
+
 }
