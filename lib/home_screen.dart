@@ -74,42 +74,50 @@ class _HomeScreenState extends State<HomeScreen> {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 5.0),
       child: Material(
-          color: Colors.black45,
           elevation: 14.0,
-          borderRadius: const BorderRadius.all(Radius.circular(10)),
-          child: Center(
-            child: Padding(
-              padding: const EdgeInsets.fromLTRB(20, 30, 10, 0),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      const Text(
-                        "Hello Ioannis",
-                        style: TextStyle(
-                            fontSize: 30,
-                            fontStyle: FontStyle.italic
+          borderRadius: const BorderRadius.all(Radius.circular(12)),
+          child: ElevatedButton(
+            onPressed: (){
+              Navigator.pushNamed(context, '/tasks');
+            },
+            style: ElevatedButton.styleFrom(
+              primary: Colors.black45, // Background color
+              onPrimary: Colors.greenAccent,
+            ),
+            child: Center(
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(20, 30, 10, 0),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        const Text(
+                          "Hello Ioannis",
+                          style: TextStyle(
+                              fontSize: 30,
+                              fontStyle: FontStyle.italic
+                          ),
                         ),
-                      ),
-                      Text(
-                        "Current Date: \n" +
-                        currentDate,
-                        style: const TextStyle(
-                            fontSize: 25,
-                            fontWeight: FontWeight.bold
+                        Text(
+                          "Current Date: \n" +
+                          currentDate,
+                          style: const TextStyle(
+                              fontSize: 25,
+                              fontWeight: FontWeight.bold
+                          ),
                         ),
-                      ),
-                    ],
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
 
-                    ],
-                  )
-                ],
+                      ],
+                    )
+                  ],
+                ),
               ),
             ),
           )

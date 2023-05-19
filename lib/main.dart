@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:smapp/home_screen.dart';
 import 'package:smapp/task_manager.dart';
+import 'package:smapp/task_screen.dart';
 
 void main() {
   runApp(ChangeNotifierProvider(
@@ -32,7 +33,8 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: "/",
       routes: {
-        "/": (context) => HomeScreen()
+        "/": (context) => HomeScreen(),
+        '/tasks': (context) => TaskScreen()
       },
     );
   }
